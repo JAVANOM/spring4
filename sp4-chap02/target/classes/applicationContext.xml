@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://www.springframework.org/schema/beans
+     http://www.springframework.org/schema/beans/spring-beans.xsd">
+     
+     <!-- 객체를 Bean 객체로 이해   -->
+     <!-- id: 빈 객체 구분 / class: 빈 객체를 생성할 때 사용할 클래스   --> 
+     <!-- id 값은 빈 객체를 참조할 때 사용  -->
+     <!-- <bean> 태그에 대해 한 개의 빈 객체를 생성한다.  -->    
+     <bean id="greeter" class="sp4.sp4_chap02.chap02.Greeter">
+         <property name="format" value="%s, 안녕하세요"/> 
+     </bean>
+     <!-- 스프링은 property 태크를 처리할 때 name속성에 지정한 값의 첫 글자를 대문자로 변환한 뒤 일하는 set 메서드를 사용  -->
+     <!-- greeter.setFormat("%s, 안녕하세요") -->
+</beans>
+
